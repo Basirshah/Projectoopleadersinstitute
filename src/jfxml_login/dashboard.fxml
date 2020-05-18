@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="953.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxml_login.DashboardController">
+   <children>
+      <ImageView fitHeight="721.0" fitWidth="963.0" layoutX="-4.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="38.0" layoutY="25.0" prefHeight="586.0" prefWidth="200.0" style="-fx-background-color: c0e3f6;">
+         <children>
+            <AnchorPane layoutX="143.0" prefHeight="586.0" prefWidth="726.0" style="-fx-background-color: f1f4fb;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ab3d800" height="103.0" layoutY="129.0" stroke="BLACK" strokeType="INSIDE" width="732.0" />
+                  <Line endX="186.66665649414062" endY="238.99998474121094" layoutX="-186.0" layoutY="-8.0" startX="910.0" startY="239.0" />
+                  <Line endX="191.0" endY="239.0" layoutX="-187.0" layoutY="-109.0" startX="914.0" startY="239.0" />
+                  <Button layoutX="298.0" layoutY="45.0" mnemonicParsing="false" prefHeight="6.0" prefWidth="65.0" style="-fx-background-color: bdc4ca;" text="FAQ">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button onAction="#movetologinpage" layoutX="681.0" layoutY="45.0" mnemonicParsing="false" style="-fx-background-color: #4399dd;" text="Logout" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Line endX="637.0" endY="-3.0" layoutX="94.0" layoutY="246.0" startX="-94.99998474121094" startY="-0.5" />
+                  <Line endX="-27.000015258789062" endY="219.0" layoutX="26.0" layoutY="114.0" startX="706.3333129882812" startY="219.0" />
+                  <Line endX="98.99998474121094" endY="-10.0" layoutX="-100.0" layoutY="343.0" startX="99.99996948242188" startY="-93.66665649414062" />
+                  <Line endX="307.83331298828125" endY="-21.5" layoutX="424.0" layoutY="354.0" startX="307.83331298828125" startY="-110.33331298828125" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbfdff" height="93.0" layoutX="-1.0" layoutY="243.0" stroke="BLACK" strokeType="INSIDE" width="732.0" />
+                  <ImageView fitHeight="90.0" fitWidth="73.0" layoutX="1.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Shakuntla%20Bibi.jpeg" />
+                     </image></ImageView>
+                  <Line endX="309.0" endY="225.0" layoutX="-240.0" layoutY="18.0" startX="309.0" startY="318.0" />
+                  <Text fx:id="f1exp" layoutX="69.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 YEARS EXPERIENCE" textAlignment="CENTER" wrappingWidth="235.33333333333326">
+                     <font>
+                        <Font name="Bodoni MT" size="12.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbfdff" height="90.0" layoutY="364.0" stroke="BLACK" strokeType="INSIDE" width="732.0" />
+                  <Line endX="309.0" endY="227.0" layoutX="-217.0" layoutY="137.0" startX="309.0" startY="317.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbfdff" height="93.0" layoutX="1.0" layoutY="469.0" stroke="BLACK" strokeType="INSIDE" width="732.0" />
+                  <Line endX="354.0" endY="225.0" layoutX="-259.0" layoutY="244.0" startX="354.0" startY="316.0" />
+                  <Text fx:id="f2name" fontSmoothingType="LCD" layoutX="79.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shakuntla Bibi" textAlignment="CENTER" wrappingWidth="121.33333333333326">
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f2sub" layoutX="92.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phd Philosophy" textAlignment="CENTER" wrappingWidth="189.33333333333326">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f2exp" layoutX="63.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7 YEARS EXPERIENCE" textAlignment="CENTER" wrappingWidth="235.33333333333326">
+                     <font>
+                        <Font name="Bodoni MT" size="12.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="90.0" fitWidth="93.0" layoutX="1.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/DR.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="114.0" fitWidth="93.0" layoutX="1.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Altaf%20Bhai.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="f4name" fontSmoothingType="LCD" layoutX="123.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guru Jee" textAlignment="CENTER" wrappingWidth="113.33333333333326">
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f4sub" fontSmoothingType="LCD" layoutX="145.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Rounder" textAlignment="CENTER" wrappingWidth="113.33333333333326">
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f4exp" layoutX="108.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 YEARS EXPERIENCE" textAlignment="CENTER" wrappingWidth="235.33333333333326">
+                     <font>
+                        <Font name="Bodoni MT" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f3name" fontSmoothingType="LCD" layoutX="101.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stephen Hawking" textAlignment="CENTER" wrappingWidth="159.33333333333326">
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f3sub" layoutX="85.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phd Physics" textAlignment="CENTER" wrappingWidth="189.33333333333326">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f3exp" layoutX="82.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7 YEARS EXPERIENCE" textAlignment="CENTER" wrappingWidth="235.33333333333326">
+                     <font>
+                        <Font name="Bodoni MT" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f1fee" layoutX="524.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PKR 5000/Rs= Per Hour">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f2fee" layoutX="524.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PKR 7000/Rs= Per Hour">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f3fee" layoutX="515.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PKR 20000/Rs= Per Hour">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="f4fee" layoutX="524.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD 10000$= Per Hour">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button onAction="#faculty1" layoutX="625.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #4399dd;" text="Hire">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                  <Button onAction="#faculty2" layoutX="625.0" layoutY="295.0" mnemonicParsing="false" style="-fx-background-color: #4399dd;" text="Hire" />
+                  <Button onAction="#faculty3" layoutX="625.0" layoutY="408.0" mnemonicParsing="false" style="-fx-background-color: #4399dd;" text="Hire" />
+                  <Button onAction="#faculty4" layoutX="625.0" layoutY="511.0" mnemonicParsing="false" style="-fx-background-color: #4399dd;" text="Hire" />
+               </children></AnchorPane>
+            <ImageView fitHeight="361.0" fitWidth="541.0" layoutX="-183.0" layoutY="-134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/basir-09.png" />
+               </image>
+            </ImageView>
+            <Circle layoutX="14.0" layoutY="227.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle layoutX="14.0" layoutY="273.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line endX="309.0" endY="129.0" layoutX="-99.0" startX="309.0" startY="231.0" />
+            <Circle layoutX="14.0" layoutY="181.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <TextField layoutX="24.0" layoutY="169.0" prefHeight="25.0" prefWidth="113.0" promptText="Subject" style="-fx-background-color: bdc4ca;" />
+            <TextField layoutX="24.0" layoutY="214.0" prefHeight="25.0" prefWidth="113.0" promptText="Level" style="-fx-background-color: bdc4ca;" />
+            <TextField layoutX="24.0" layoutY="260.0" prefHeight="25.0" prefWidth="113.0" promptText="Gender" style="-fx-background-color: bdc4ca;" />
+            <Circle layoutX="14.0" layoutY="307.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <TextField layoutX="24.0" layoutY="295.0" prefHeight="25.0" prefWidth="113.0" promptText="Area" style="-fx-background-color: bdc4ca;" />
+            <TextArea layoutY="333.0" prefHeight="34.0" prefWidth="142.0" promptText="Location">
+               <font>
+                  <Font name="Arial Bold Italic" size="24.0" />
+               </font>
+            </TextArea>
+            <TextField layoutX="192.0" layoutY="46.0" prefHeight="25.0" prefWidth="235.0" promptText="                           Search" style="-fx-background-color: bdc4ca;">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></TextField>
+           
+            <ImageView fx:id="faculty1" accessibleRole="BUTTON" onMouseClicked="#teacherinfofortime"  fitHeight="111.0" fitWidth="65.0" layoutX="144.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Teacher.jpeg" />
+               </image>
+            </ImageView>
+            <MenuButton layoutX="25.0" layoutY="90.0" mnemonicParsing="false" opacity="0.73" prefHeight="24.0" prefWidth="93.0" style="-fx-background-color: bdc4ca;" text="Categories">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Maths" />
+                <MenuItem mnemonicParsing="false" text="Physics" />
+                  <MenuItem mnemonicParsing="false" text="Object Oriented programming" />
+                  <MenuItem mnemonicParsing="false" text="Linear Algebra" />
+                  <MenuItem mnemonicParsing="false" text="Quantum Mechanics" />
+                  <MenuItem mnemonicParsing="false" text="String Theory" />
+                  <MenuItem mnemonicParsing="false" text="Calculus" />
+                  <MenuItem mnemonicParsing="false" text="All Rounder" />
+                  <MenuItem mnemonicParsing="false" text="C Programming" />
+                  <MenuItem mnemonicParsing="false" text="English" />
+                  <MenuItem mnemonicParsing="false" text="Urdu" />
+              </items>
+               <font>
+                  <Font name="Bodoni MT Italic" size="12.0" />
+               </font>
+            </MenuButton>
+            <Text fx:id="f1name" fontSmoothingType="LCD" layoutX="223.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAMI KAZMI" textAlignment="CENTER" wrappingWidth="113.33333333333326">
+               <font>
+                  <Font name="Bodoni MT" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="f1sub" layoutX="209.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSC CHEMISTRY" textAlignment="CENTER" wrappingWidth="189.33333333333326">
+               <font>
+                  <Font name="Bodoni MT Italic" size="17.0" />
+               </font>
+            </Text>
+            <Label layoutX="6.0" layoutY="564.0" prefHeight="17.0" prefWidth="131.0" text="Copyright 2019-2020" />
+            <ImageView fitHeight="165.0" fitWidth="142.0" layoutX="1.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/thumbnail.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="402.0" layoutY="45.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Search%20Bar.png" />
+               </image>
+            </ImageView>
+            <SplitPane layoutX="1.0" layoutY="367.0" prefHeight="199.0" prefWidth="142.0">
+               <items>
+                  <ScrollPane prefHeight="200.0" prefWidth="131.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="6.0" layoutY="-1.0" />
+                              <ImageView layoutX="-13.0" layoutY="-15.0">
+                                 <image>
+                                    <Image url="@images/Map.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <ScrollBar layoutX="915.0" layoutY="25.0" orientation="VERTICAL" prefHeight="587.0" prefWidth="14.0" />
+   </children>
+</AnchorPane>

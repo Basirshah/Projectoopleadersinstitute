@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -14,34 +13,24 @@
 
 <!--xmlns="http://javafx.com/javafx/11.0.1" -->
 
-<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxml_login.FXMLDocumentController">
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxml_login.LoginpageController">
 <!--<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/javafx/11.0.1" fx:controller="javafxapplication1.FXMLDocumentController">-->
    
     <children>
-      <ImageView fitHeight="470.0" fitWidth="704.0" layoutX="-6.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="470.0" fitWidth="704.0" layoutX="-6.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/basir-10.png" />
+            <Image url="@images/Background.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="346.0" layoutY="71.0" prefHeight="291.0" prefWidth="236.0" style="-fx-background-color: #FFFFFF;" />
-      <Hyperlink layoutX="481.0" layoutY="232.0" text=" Not a Member Yet?" textFill="#959393">
-         <font>
-            <Font name="System Italic" size="10.0" />
-         </font>
-      </Hyperlink>
-      <Hyperlink layoutX="376.0" layoutY="232.0" prefHeight="19.0" prefWidth="84.0" text="Forgot Password?" textFill="#959393" underline="true">
-         <font>
-            <Font name="System Italic" size="10.0" />
-         </font>
-      </Hyperlink>
-      <ImageView fitHeight="420.0" fitWidth="615.0" layoutX="40.0" layoutY="-544.0" pickOnBounds="true" preserveRatio="true" y="556.0">
+      <AnchorPane layoutX="346.0" layoutY="71.0" prefHeight="303.0" prefWidth="253.0" style="-fx-background-color: #FFFFFF;" />
+      <ImageView fitHeight="421.0" fitWidth="638.0" layoutX="30.0" layoutY="-544.0" pickOnBounds="true" preserveRatio="true" y="556.0">
          <image>
-            <Image url="@images/basir-04.png" />
+            <Image url="@images/BG.png" />
          </image>
       </ImageView>
       <Line endX="-58.333343505859375" layoutX="465.0" layoutY="334.0" startX="-115.66665649414062" stroke="#4399dd" />
       <Line endX="32.0" layoutX="546.0" layoutY="334.0" startX="-35.20001220703125" stroke="#4399dd" />
-      <ImageView fitHeight="74.0" fitWidth="109.0" layoutX="376.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView  fx:id="instagram" accessibleRole="BUTTON" onMouseClicked="#instagram" fitHeight="74.0" fitWidth="109.0" layoutX="376.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/basir-02.png" />
          </image>
@@ -50,39 +39,53 @@
          <font>
             <Font name="Calibri Bold" size="19.0" />
          </font></Text>
-      <ImageView fitHeight="80.0" fitWidth="128.0" layoutX="403.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="facebook" accessibleRole="BUTTON" onMouseClicked="#facebook" fitHeight="80.0" fitWidth="128.0" layoutX="403.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/basir-05.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="84.0" layoutX="439.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" rotate="-8.1">
+      <ImageView fx:id="twitter" accessibleRole="BUTTON" onMouseClicked="#twitter" fitHeight="62.0" fitWidth="84.0" layoutX="439.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true" rotate="-8.1">
          <image>
             <Image url="@images/basir-08.png" />
          </image></ImageView>
-      <Text layoutX="418.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Or With" textAlignment="CENTER" wrappingWidth="91.0511936596622">
+      <Text layoutX="417.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Or With" textAlignment="CENTER" wrappingWidth="91.0511936596622">
          <font>
             <Font name="System Italic" size="9.0" />
          </font>
       </Text>
-      <TextField layoutX="386.0" layoutY="166.0" promptText="       Username/Email" />
-      <Button layoutX="439.0" layoutY="254.0" mnemonicParsing="false" style="-fx-background-color: #4399dd;" text="Sign In" textAlignment="CENTER">
+      <TextField fx:id="username" layoutX="386.0" layoutY="154.0" promptText="       Username/Email" />
+      <Button fx:id="signin" layoutX="439.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #4399dd;" text="Sign In" textAlignment="CENTER">
          <font>
             <Font size="11.0" />
          </font>
          <cursor>
-            <Cursor fx:constant="DEFAULT" />
+            <!--<Cursor fx:constant="DEFAULT" />-->
          </cursor>
       </Button>
-      <ImageView fitHeight="41.0" fitWidth="58.0" layoutX="370.0" layoutY="160.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="41.0" fitWidth="58.0" layoutX="374.0" layoutY="147.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/basir-07.png" />
          </image>
       </ImageView>
-      <PasswordField id="basir" layoutX="386.0" layoutY="203.0" promptText="        ***********" />
-      <ImageView fitHeight="35.0" fitWidth="58.0" layoutX="369.0" layoutY="199.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+      <PasswordField fx:id="password" layoutX="386.0" layoutY="187.0" promptText="        ***********" />
+      <ImageView fitHeight="35.0" fitWidth="58.0" layoutX="377.0" layoutY="182.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/basir-06.png" />
          </image>
       </ImageView>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+      <ImageView fitHeight="458.0" fitWidth="644.0" layoutX="-65.0" layoutY="7.0">
+         <image>
+            <Image url="@images/basir-09.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="352.0" layoutY="223.0" mnemonicParsing="false" onAction="#teacherform" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #FFFFFF;" text="Become Teacher" underline="true" wrapText="true">
+         <font>
+            <Font name="Bodoni MT Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="472.0" layoutY="223.0" mnemonicParsing="false" onAction="#studentform" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF;" text="Become Student" underline="true">
+         <font>
+            <Font name="Bodoni MT Italic" size="12.0" />
+         </font></Button>
     </children>
 </AnchorPane>

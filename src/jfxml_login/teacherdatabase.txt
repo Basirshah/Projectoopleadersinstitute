@@ -1,0 +1,8 @@
+  Namenull  FatherNamenull  Last Qualificationnull  Phone Number null  Mobile number null  Gendernull  EmailnullAgenull,
+  NameBasir   FatherNameFayyaz  Last Qualificationqualifi  Phone Number 02132272612  Mobile number 03012726754  Gendermale   Emailbasirshah201Age17
+  Namefakhir shah  FatherNamefayyaz ahmed shah  Last Qualificationqualifi  Phone Number 3332222111  Mobile number 03222400782  Gendermale  Emailfakhirshah23@gmail.comAge16,
+  Name:  FatherName:   Last Qualification :qualifi  Password:   Mobile number:   Gender :  Email :Age:
+  Name:  FatherName:   Last Qualification :qualifi  Password:   Mobile number:   Gender :  Email :Age:
+  Name:Basir Ahmed shah  FatherName:   Last Qualification :qualifi  Password:   Mobile number:   Gender :  Email :Age:
+  Name:SamiKazmi  FatherName: Kazmi  Last Qualification :qualifi  Password: itssami  Mobile number: 11212  Gender :Male  Email :sami@demo.comAge:14
+  Name:basir  FatherName:   Last Qualification :qualifi  Password: 123654  Mobile number:   Gender :  Email :Age:

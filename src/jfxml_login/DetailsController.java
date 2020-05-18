@@ -13,23 +13,27 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
 /**
+ * FXML Controller class
  *
- * @author HP
+ * @author Basir
  */
-public class FXMLDocumentController implements Initializable {
-    
-    @FXML
-    private Label label;
-    
-//  @FXML
-//    private void handleButtonAction(ActionEvent event) {
-//        System.out.println("You clicked me!");
-//        label.setText("Hello World!");
-//    }
-//    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+public class DetailsController  {
+
+    /**
+     * Initializes the controller class.
+     */
+    String fb ;
+
+  @FXML
+  private Label facexp;
+  
+  
+
+ @FXML
+ void btnact (ActionEvent event){
+     
+      facexp.setText(fb);
+ }
+      
     
 }
